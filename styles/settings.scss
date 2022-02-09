@@ -1,14 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@300;500;600;700&family=Grey+Qo&family=Parisienne&family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap');
 
 $blue: #1d9bf0;
-$black: #000;
+$black: #0f1419;
 $white: #fff;
-$gray: ##566773;
+$gray: #566773;
 
 *, ::before, ::after{
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    color: #000;
+    color: $black;
     font-weight: 300;
     margin: 0;
     padding: 0;
@@ -22,5 +22,9 @@ a{
 
 li{
     list-style: none;
+}
+
+button,img{
+  cursor: pointer;
 }
 
