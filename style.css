@@ -1,29 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@300;500;600;700&family=Grey+Qo&family=Parisienne&family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap");
-*, ::before, ::after {
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-  color: #000;
-  font-weight: 300;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-}
+/* Error: Expected identifier.
+ *   ,
+ * 6 | $gray: ##566773;
+ *   |         ^
+ *   '
+ *   settings.scss 6:9  @import
+ *   style.scss 1:9     root stylesheet */
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-li {
-  list-style: none;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cards {
-  width: 80%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Expected identifier.\a   \2577 \a 6 \2502  $gray: ##566773;\a   \2502          ^\a   \2575 \a   settings.scss 6:9  @import\a   style.scss 1:9     root stylesheet";
 }
