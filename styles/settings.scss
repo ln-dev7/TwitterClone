@@ -1,30 +1,59 @@
-@import url('https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@300;500;600;700&family=Grey+Qo&family=Parisienne&family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@300;500;600;700&family=Grey+Qo&family=Parisienne&family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap");
 
 $blue: #1d9bf0;
 $black: #0f1419;
 $white: #fff;
 $gray: #566773;
 
-*, ::before, ::after{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    color: $black;
-    font-weight: 300;
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth;
-}
- 
-a{
-    text-decoration: none;
-    color: inherit;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: $black;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
-li{
-    list-style: none;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-button,img{
+li {
+  list-style: none;
+}
+
+button,
+img {
   cursor: pointer;
 }
 
+
+.box-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 10px rgba($color: $gray, $alpha: 0.2);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: $white;
+  h2 {
+    font-weight: bold;
+  }
+  div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    img {
+      margin: 0 0.5rem;
+    }
+  }
+}

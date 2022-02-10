@@ -17,7 +17,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   width: 300px;
-  height: max-content;
+  height: 100vh;
   top: 0;
   left: 0;
   margin-right: 5px;
@@ -334,6 +334,7 @@ body {
           img{
             width: 16px;
             height: 16px;
+            margin-right: 5px;
           }
           span{
             font-size: 13px;
@@ -567,31 +568,6 @@ body {
       color: $blue;
       font-size: 15px;
       padding: 0.5rem 0 1rem 1rem;
-    }
-  }
-  &-message {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: -1px -1px 10px rgba($color: $gray, $alpha: 0.2);
-    border-radius: 10px 10px 0 0;
-    padding: 0.5rem;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: $white;
-    h2 {
-      font-weight: bold;
-    }
-    div {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      justify-content: flex-end;
-      img {
-        margin: 0 0.5rem;
-      }
     }
   }
   .copy {

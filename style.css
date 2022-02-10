@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Birthstone&family=Poppins:wght@300;500;600;700&family=Grey+Qo&family=Parisienne&family=Roboto:wght@300;400&family=Ubuntu:wght@400;500;700&display=swap");
-*, ::before, ::after {
+*,
+::before,
+::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   color: #0f1419;
@@ -18,8 +20,35 @@ li {
   list-style: none;
 }
 
-button, img {
+button,
+img {
   cursor: pointer;
+}
+
+.box-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 10px rgba(86, 103, 115, 0.2);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.box-message h2 {
+  font-weight: bold;
+}
+.box-message div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.box-message div img {
+  margin: 0 0.5rem;
 }
 
 body {
@@ -39,7 +68,7 @@ body {
   position: -webkit-sticky;
   position: sticky;
   width: 300px;
-  height: max-content;
+  height: 100vh;
   top: 0;
   left: 0;
   margin-right: 5px;
@@ -355,6 +384,7 @@ body {
 .container-post .card-container h3 img {
   width: 16px;
   height: 16px;
+  margin-right: 5px;
 }
 .container-post .card-container h3 span {
   font-size: 13px;
@@ -582,31 +612,6 @@ body {
   color: #1d9bf0;
   font-size: 15px;
   padding: 0.5rem 0 1rem 1rem;
-}
-.asside-message {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  box-shadow: -1px -1px 10px rgba(86, 103, 115, 0.2);
-  border-radius: 10px 10px 0 0;
-  padding: 0.5rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #fff;
-}
-.asside-message h2 {
-  font-weight: bold;
-}
-.asside-message div {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.asside-message div img {
-  margin: 0 0.5rem;
 }
 .asside .copy {
   text-align: center;
