@@ -29,18 +29,20 @@ body {
 }
 
 .cards {
-  width: 80%;
+  width: 82%;
   min-height: 100vh;
   display: flex;
   justify-content: center;
 }
 
 .navigation {
+  position: -webkit-sticky;
   position: sticky;
-  width: 275px;
+  width: 300px;
+  height: max-content;
   top: 0;
   left: 0;
-  right: 0;
+  margin-right: 5px;
 }
 .navigation-logo {
   margin-top: 1rem;
@@ -135,19 +137,29 @@ body {
   width: 19px;
 }
 
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   position: relative;
   border-left: 1px solid #eff3f4;
-  border-left: 1px solid #eff3f4;
+  border-right: 1px solid #eff3f4;
   width: 600px;
 }
 .container-header {
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
 }
 .container-header img {
@@ -312,4 +324,54 @@ body {
   background: #1d9bf0;
   border-radius: 5px;
   bottom: 0;
+}
+
+.asside {
+  padding: 0 20px;
+}
+.asside-search {
+  position: relative;
+  width: 350px;
+  margin: 5px 0 15px 0;
+}
+.asside-search label {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translate(-50%, -50%);
+}
+.asside-search label img {
+  width: 20px;
+  height: 20px;
+}
+.asside-search input {
+  width: 100%;
+  background: #eff3f4;
+  border: 1px solid #eff3f4;
+  border-radius: 30px;
+  padding: 12px;
+  padding-left: 50px;
+  outline: none;
+}
+.asside-search input:focus {
+  background: #fff;
+  border-color: #1d9bf0;
+}
+.asside-recent {
+  width: 350px;
+  height: 230px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+.asside-recent img {
+  width: 113px;
+  height: 113px;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.asside .copy {
+  text-align: center;
+}
+.asside .copy a {
+  color: #1d9bf0;
 }
