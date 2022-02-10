@@ -325,14 +325,117 @@ body {
   border-radius: 5px;
   bottom: 0;
 }
+.container-post .card {
+  padding: 10px 20px;
+  cursor: pointer;
+  border-top: 1px solid #eff3f4;
+  border-bottom: 1px solid #eff3f4;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: 0.3s ease;
+}
+.container-post .card:hover {
+  background: rgba(86, 103, 115, 0.05);
+}
+.container-post .card .pic-card {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.container-post .card-container {
+  width: 100%;
+  margin-left: 10px;
+}
+.container-post .card-container h3 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.container-post .card-container h3 img {
+  width: 16px;
+  height: 16px;
+}
+.container-post .card-container h3 span {
+  font-size: 13px;
+  color: #566773;
+  font-weight: bold;
+}
+.container-post .card-container h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.container-post .card-container h2 span {
+  color: #566773;
+  font-size: 15px;
+}
+.container-post .card-container p {
+  padding: 0.25rem 0;
+  font-size: 15px;
+}
+.container-post .card-container p .tag {
+  color: #1d9bf0;
+}
+.container-post .card-container p .tag:hover {
+  text-decoration: underline;
+}
+.container-post .card-container .img-post {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  object-fit: cover;
+}
+.container-post .card-container .promo {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid #cfd9de;
+  background: #fff;
+  font-weight: bold;
+  padding: 0.3rem 0;
+  margin: 10px 0;
+  font-size: 15px;
+}
+.container-post .card-container .promo:hover {
+  background: rgba(86, 103, 115, 0.2);
+}
+.container-post .card-container .footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+.container-post .card-container .footer li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 3rem;
+}
+.container-post .card-container .footer li img {
+  width: 18px;
+  height: 18px;
+  margin-right: 1rem;
+}
+.container-post .card-container .footer li span {
+  font-size: 13px;
+  color: #566773;
+}
 
 .asside {
   padding: 0 20px;
+  height: max-content;
+  position: relative;
 }
 .asside-search {
   position: relative;
   width: 350px;
-  margin: 5px 0 15px 0;
+  padding: 5px 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: #fff;
 }
 .asside-search label {
   position: absolute;
@@ -361,6 +464,7 @@ body {
   width: 350px;
   height: 230px;
   border-radius: 20px;
+  margin-top: 10px;
   overflow: hidden;
 }
 .asside-recent img {
@@ -368,6 +472,141 @@ body {
   height: 113px;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.asside-follow {
+  width: 350px;
+  border-radius: 20px;
+  background: #f7f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: 15px 0;
+}
+.asside-follow h2 {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 1rem 0 0.5rem 1rem;
+}
+.asside-follow .card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.asside-follow .card:hover {
+  background: rgba(86, 103, 115, 0.2);
+}
+.asside-follow .card img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.asside-follow .card div {
+  width: 100%;
+  margin-left: 10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.asside-follow .card div h2 {
+  font-size: 15px;
+  font-weight: bold;
+  padding: 0;
+}
+.asside-follow .card div h3 {
+  font-size: 15px;
+  color: #566773;
+}
+.asside-follow .card button {
+  font-weight: bold;
+  border: none;
+  color: #fff;
+  background: #0f1419;
+  border-radius: 30px;
+  padding: 7px 13px;
+}
+.asside-follow .altro {
+  color: #1d9bf0;
+  font-size: 15px;
+  padding: 0.5rem 0 1rem 1rem;
+}
+.asside-tendance {
+  width: 350px;
+  border-radius: 20px;
+  background: #f7f9f9;
+  margin: 15px 0;
+  padding-bottom: 1rem;
+}
+.asside-tendance .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1rem 0.5rem 1rem;
+}
+.asside-tendance .title h2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+.asside-tendance .card {
+  padding: 1rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+.asside-tendance .card:hover {
+  background: rgba(86, 103, 115, 0.2);
+}
+.asside-tendance .card div {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+.asside-tendance .card div h2 {
+  font-size: 15px;
+  font-weight: bold;
+}
+.asside-tendance .card div h3,
+.asside-tendance .card div h4 {
+  font-size: 13px;
+  color: #566773;
+}
+.asside-tendance .altro {
+  color: #1d9bf0;
+  font-size: 15px;
+  padding: 0.5rem 0 1rem 1rem;
+}
+.asside-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: -1px -1px 10px rgba(86, 103, 115, 0.2);
+  border-radius: 10px 10px 0 0;
+  padding: 0.5rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+}
+.asside-message h2 {
+  font-weight: bold;
+}
+.asside-message div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.asside-message div img {
+  margin: 0 0.5rem;
 }
 .asside .copy {
   text-align: center;
